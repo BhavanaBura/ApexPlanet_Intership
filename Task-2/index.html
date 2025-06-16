@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 My Web Project 🌟</h1>
+  <div class="box">
+    <h2>📬 Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name"><br>
+      <input type="email" id="email" placeholder="Your Email"><br>
+      <button type="submit">Submit</button>
+      <p id="error" class="error"></p>
+    </form>
+  </div>
+
+  <div class="box">
+    <h2>📝 To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+
+    <table>
+      <thead>
+        <tr><th>#</th><th>Task</th><th>Action</th></tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
