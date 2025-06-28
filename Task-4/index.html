@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 4 - Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <button onclick="showSection('portfolio')">Portfolio</button>
+    <button onclick="showSection('todo')">To-Do App</button>
+    <button onclick="showSection('products')">Product Listing</button>
+  </nav>
+  <section id="portfolio" class="section">
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal portfolio. Here I showcase my skills and projects.</p>
+    <p>This is a simple, responsive portfolio section with navigation.</p>
+  </section>
+  
+  <section id="todo" class="section" style="display:none;">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="products" class="section" style="display:none;">
+    <h1>Product Listing</h1>
+    <label>Filter by Category:</label>
+    <select id="categoryFilter" onchange="renderProducts()">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <label>Sort by:</label>
+    <select id="sortOption" onchange="renderProducts()">
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <ul id="productList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
