@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini E-Commerce App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini E-Commerce</h1>
+    <div class="cart-info">
+      <span id="cartCount">Cart: 0</span> | 
+      <span id="cartTotal">Total: ₹0</span>
+      <button id="resetCartBtn">Reset Cart</button>
+    </div>
+  </header>
+
+  <section class="controls">
+    <label>Filter by Category:</label>
+    <select id="categoryFilter">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <label>Sort by:</label>
+    <select id="sortOption">
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+  </section>
+
+  <section id="productList" class="grid"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
