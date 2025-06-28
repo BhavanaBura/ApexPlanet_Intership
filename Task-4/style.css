@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  color: white;
+  background: #444;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #555;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 5px;
+  cursor: pointer;
+}
+li:hover {
+  background: #f0f0f0;
+}
